@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1571747179 source:e:\code\leetcode\p443\main.cpp
+	<iostream>
+	<vector>
+	<sstream>
+

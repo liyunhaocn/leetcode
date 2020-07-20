@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1573710995 source:e:\code\leetcode\p970\main.cpp
+	<iostream>
+	<set>
+	<math.h>
+	<vector>
+

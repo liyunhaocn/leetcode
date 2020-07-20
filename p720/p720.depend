@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1572490434 source:e:\code\leetcode\p720\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
