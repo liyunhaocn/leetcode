@@ -2,7 +2,9 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
+
 #define debug(x) cout<<#x<<": "<<x<<endl;
+
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
