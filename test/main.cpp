@@ -1,30 +1,27 @@
-
 #include <iostream>
-#include <sstream>
-#include <fstream>
+#include <vector>
+#include <array>
 using namespace std;
-
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
-
-class Solution {
-public:
-    TreeNode* trimBST(TreeNode* root, int L, int R) {
-
-    }
-};
 
 int main()
 {
-	ofstream openfile("test.csv", std::ios::app);
-	openfile << "fdsafdsaf,dfasdfasdfas,mazx,fasdfsaf,dfasf, " <<1<<endl;
-	for (int i = 1; i < 11; i++){
-		openfile << "1,2,2,2,2, " <<1<<endl;
-	}
-	openfile.close();
-	return 0;
+    std::vector<int> demo{1,2};
+
+
+    demo.insert(demo.end()-1, 3);
+    demo.insert(demo.rebegin(), 3);
+
+    for(int a:demo){
+        cout<<a<<" ";
+    }
+    cout<<endl;
+
+    demo.insert(demo.begin(), 4);
+
+    for(int a:demo){
+        cout<<a<<" ";
+    }
+    cout<<endl;
+
+    return 0;
 }

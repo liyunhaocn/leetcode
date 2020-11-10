@@ -37,6 +37,59 @@ public:
 
 };
 
+class US{
+    public:
+    vector<int> parent;
+
+    US(int n){
+
+        parent = vector<int> (n,0);
+        for(int i=0;i<n;i++){
+            parent[i] = i;
+        }
+    }
+
+    int findP(int n){
+        int nn = n;
+        while( parent[n] !=n ){
+            n = parent[n];
+        }
+        parent[nn] = n;
+        return n;
+    }
+
+    bool unionxy(int x,int y){
+
+        int yp = findP(y);
+        int xp = findP(x);
+        parent[yp] = xp;
+        return true;
+    }
+};
+
+class Solution {
+public:
+    vector<bool>visit;
+    int findCircleNum(vector<vector<int>>& M) {
+        US u(M.size());
+        for(int i=0;i<M.size();i++){
+            for(int j=0;j<M[i].size();j++){
+                if(M[i][j]==1){
+                    u.unionxy(i,j);
+                }
+            }
+        }
+        int ret = 0;
+        for(int i=0;i<M.size();i++){
+            if(u.parent[i] == i){
+                ret++;
+            }
+        }
+        return ret;
+    }
+
+};
+
 int main()
 {
     Solution Solution1;

@@ -1,20 +1,27 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <string>
+#include <fstream>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+#include <stack>
+#include <algorithm>
+#include <queue>
+#include <sstream>
+#include <cstdlib>
+#include <random>
+#include <chrono>
+#include <limits.h>
+#include <map>
+#include <stdio.h>
+#include <ctime>
+#include <thread>
+#include <future>
+#include <iomanip>
+#include <bitset>
 
-#include<cstdio>
-#include<cstring>
-#include<algorithm>
-#include<iostream>
-#include<string>
-#include<vector>
-#include<stack>
-#include<bitset>
-#include<cstdlib>
-#include<cmath>
-#include<set>
-#include<list>
-#include<deque>
-#include<map>
-#include<queue>
-#include<sstream>
 using namespace std;
 typedef long long ll;
 const double PI = acos(-1.0);
@@ -24,18 +31,21 @@ const int maxn = 100;
 #define isBigC(x) ((x>='A' && x<='Z') ? true:false)
 #define isSmallC(x) ((x>='a' && x<='z') ? true:false)
 #define isN(x) ((x>='0' && x<='9') ? true:false)
+
+#define debug(x) cout<<#x<<": "<<(x)<<endl;
+#define out(x) cout<<#x<<": "<<(x)<<" ";
+
+using LL = long long int;
+
+
 int main()
 {
-    string string_temp="302";
-    int i=0;
-    int int_temp=0;
-    //int_temp=atoi(string_temp.c_str());
 
-    while(isN(string_temp[i])){
-        int_temp*=10;
-        int_temp+=string_temp[i]-'0';
-        i++;
-    }
-    cout<<int_temp<<endl;
+    auto fds = [&] (){
+        debug(1)
+        fds();
+    };
+
+    fds();
     return 0;
 }
